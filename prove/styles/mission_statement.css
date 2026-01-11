@@ -1,0 +1,44 @@
+body {
+    font-size: 30px;
+}
+#content {
+    border: 1px solid darkgrey;
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+}
+h2 {
+    text-align: center;
+    letter-spacing: 2px;
+}
+#school {
+    text-align:center;
+    color: royalblue;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+}
+h1, p, i, li {
+    font-size: 20px;
+}
+hr {
+    width: 70%;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+#topics {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+#list {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+li {
+    padding: 10px;
+}
+img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
