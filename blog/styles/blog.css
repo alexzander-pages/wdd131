@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    line-height: 1.6;
+}
+h1 {
+    text-align: center;
+}
+nav {
+    text-align: right;
+    padding: 20px;
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+nav li {
+    list-style: none;
+}
+a {
+    color: rgb(183, 16, 16);
+    padding: 20px;
+    text-decoration: none;
+}
+a:focus-visible {
+    outline: 3px solid orange;
+    outline-offset: 2px;
+}
+main {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.content-rating {
+    text-align: right;
+    font-weight: bold;
+    border-right: 2px solid orange;
+    padding-right: 30px;
+}
+.release-date {
+    font-style: italic;
+}
+.book {
+    padding-left: 30px;
+}
+.title{
+    color: rgb(183, 16, 16);
+    text-align: left;
+}
+.book img {
+    width: 35%;
+    display: block;
+    margin: 20px auto;
+}
+.description {
+    text-align: left;
+}
+footer {
+    text-align: center;
+}
+footer p {
+    padding: 20px;
+    margin: 0;
+    border-top: 2px solid orange;
+    font-weight: bold;
+}
+
+@media (max-width:1000px) {
+    main {
+        grid-template-columns: 1fr;
+        margin-top: 62px;
+        margin-bottom: 30px;
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-top: 2px solid orange;
+    }
+    .content-rating {
+        text-align: right;
+        font-weight: bold;
+        border-right: none;
+    }
+    .release-date {
+        font-style: italic;
+    }
+    .book {
+        text-align: center;
+    }
+    .title{
+        color: rgb(183, 16, 16);
+    }
+    img {
+        width: 35%;
+    }
+    .description {
+        text-align: left;
+    }
+}
