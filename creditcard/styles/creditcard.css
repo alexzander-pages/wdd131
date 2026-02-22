@@ -1,0 +1,95 @@
+body {
+    font-size: 17px;
+}
+.errors {
+    color: red;
+    white-space: pre-line;
+}
+#cardForm {
+    display: grid;
+    grid-template-columns: 1fr 2fr 95px;
+    grid-template-rows: 1fr 2fr 1fr 55px;
+    max-width: 600px;
+    min-width: 500px;
+}
+#cardFrontGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    z-index: 10;
+    padding: 20px;
+    background-color: rgb(184, 180, 180);
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+}
+#totalAmount {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#emoji {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: end;
+    font-size: 50px;
+    margin: 0;
+}
+#cardNumber {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#cardNumber input {
+    width: 270px;
+    height: 30px;
+}
+#cardHolder {
+    grid-column: 1/2;
+    grid-row: 3/4;
+
+}
+#cardHolder input {
+    width: 270px;
+    height: 30px;
+}
+#cardExpiration {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#cardExpiration input {
+    width: 60px;
+    height: 30px;
+}
+#cardBackGrid {
+    display: grid;
+    grid-template-columns: 1fr 95px;
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    z-index: 1;
+    background-color: rgb(184, 180, 180);
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+}
+#blackStrip {
+    background-color: black;
+    grid-column: 2/3;
+    margin-bottom: 42px;
+}
+#cvc {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding: 10px;
+}
+#cvc input {
+    width: 60px;
+    height: 30px;
+}
+button {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    height: 40px;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+}

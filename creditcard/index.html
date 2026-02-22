@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Form</title>
+    <link href="styles/creditcard.css" rel="stylesheet">
+    <script src="javascript/creditcard.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <section class="errors"></section>
+    <form id="cardForm" action="#" method="get">
+        <section id="cardFrontGrid">
+            <p id="totalAmount">TOTAL: $199</p>
+            <p id="emoji">💳</p>
+            <div id="cardNumber">
+                <label id="creditCardLabel" for="creditCardNumber">CARD NUMBER</label>
+                <input
+                type="text"
+                id="creditCardNumber"
+                name="creditCardNumber"
+                pattern="[0-9]{16}"
+                placeholder="1234 5678 9101 1020"
+                required
+                />
+            </div>
+            <div id="cardHolder">
+                <label for="cardHolder">CARD HOLDER</label>
+                <input 
+                type="text"
+                id="cardHolder"
+                name="cardHolder"
+                placeholder="John Doe"
+                required
+                />
+            </div>
+            <div id="cardExpiration">
+                <label for="expirationDate">EXPIRATION</label>
+                <input 
+                type="text" 
+                id="month" 
+                name="expMonth" 
+                placeholder="MM" 
+                aria-labelledby="expirationDate">
+                <input 
+                type="text" 
+                id="year" 
+                name="expYear" 
+                placeholder="YY" 
+                aria-labelledby="expirationDate">
+            </div>
+        </section>
+        <section id="cardBackGrid">
+            <p id="blackStrip"> </p>
+            <div id="cvc">
+                <label id="verificationCode" for="cvcCvv">CVC/CVV</label>
+                <input
+                type="text"
+                id="cvcCvv"
+                name="cvcCvv"
+                pattern="[0-9]{3}"
+                placeholder="xxx"
+                required
+                />
+            </div>
+        </section>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>   
