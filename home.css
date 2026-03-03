@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-align: center;
+    font-size: 20px
+}
+header {
+    background-color: lightgrey;
+    padding-bottom: 10px;
+}
+h1 {
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+}
+nav {
+    margin-top: 10px;
+}
+nav a {
+    color: white;
+    padding: 20px;
+    display: block;
+    display: inline;
+}
+.hide {
+    display: none;
+}
+#ponderBtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 0.7em;
+    padding: 10px;
+}
+#ponderNav {
+    font-size: 0.7em;
+}
+#proveBtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 0.7em;
+    padding: 10px;
+}
+#proveNav {
+    font-size: 0.7em;
+}

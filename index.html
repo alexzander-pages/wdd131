@@ -6,27 +6,35 @@
     <meta name="description" content="The home page to my wdd131 assignments">
     <meta name="author" content="Cruz Day">
     <title>wdd131 home page</title>
-    <link ref="style.css" href="stylesheet">
+    <link href="home.css" rel="stylesheet">
+    <script src="home.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Cruz Day: WDD 131 portfolio</h1>
-        <nav>
-            <a href="ponder/meta-css.html">Meta tags and CSS selectors</a>
-            <a href="mission/index.html">Mission Statement</a>
-            <a href="ponder/dom.html">DOM Basics</a>
-            <a href="ponder/dom-theme.html">DOM Theme</a>
-            <a href="ponder/responsive.html">Responsive Design</a>
-            <a href="coolpics/index.html">Cool Pics</a>
-            <a href="ponder/modal.html">Modals</a>
-            <a href="ponder/movies.html">Movies</a>
-            <a href="blog/blog.html">Blog</a>
-            <a href="ponder/arrays.html">Array Methods</a>
-            <a href="ponder/form.html">Working with Forms</a>
-            <a href="creditcard/index.html">Credit Card Form</a>
-            <a href="ponder/courses.html">JS Objects</a>
-            <a href="charactercard/index.html">Chracter Card</a>
-        </nav>
+        <button class="menu-btn">Menu</button>
+        <section class="hide">    
+            <button id="proveBtn">Prove</button>
+            <button id="ponderBtn">Ponder</button>
+            <nav id="proveNav" class="hide">
+                <a href="blog/blog.html">Blog</a>
+                <a href="charactercard/index.html">Character Card</a>
+                <a href="coolpics/index.html">Cool Pics</a>
+                <a href="creditcard/index.html">Credit Card Form</a>
+                <a href="mission/index.html">Mission Statement</a>
+            </nav>
+            <nav id="ponderNav" class="hide">
+                <a href="ponder/arrays.html">Array Methods</a>
+                <a href="ponder/courses.html">JS Objects</a>
+                <a href="ponder/dom-theme.html">DOM Theme</a>
+                <a href="ponder/dom.html">DOM Basics</a>
+                <a href="ponder/form.html">Working with Forms</a>
+                <a href="ponder/meta-css.html">Meta tags and CSS selectors</a>
+                <a href="ponder/modal.html">Modals</a>
+                <a href="ponder/movies.html">Movies</a>
+                <a href="ponder/responsive.html">Responsive Design</a>
+            </nav>
+        </section>
     </header>
     <main></main>
     <footer></footer>
