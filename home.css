@@ -42,6 +42,12 @@ nav a {
 #ponderNav {
     font-size: 0.7em;
 }
+#ponderNav a {
+    text-decoration: none;
+}
+#ponderNav a:hover {
+    color:black;
+}
 #proveBtn {
     background-color: transparent;
     border: none;
@@ -51,4 +57,26 @@ nav a {
 }
 #proveNav {
     font-size: 0.7em;
+}
+#proveNav a {
+    text-decoration: none;
+}
+#proveNav a:hover {
+    color:black;
+}
+#sunnyNav {
+    font-size: 0.7em;
+}
+#sunnyNav a {
+    text-decoration: none;
+}
+#sunnyNav a:hover {
+    color:black;
+}
+#sunnyBtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 0.7em;
+    padding: 10px;
 }

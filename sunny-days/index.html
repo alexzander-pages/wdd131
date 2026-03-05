@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny Days Home Page</title>
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+    <header>
+        <div class="circle-background logo_link">
+            <a href="index.html">
+                <img class="logo" src="images/sunny-days-logo.png" alt="Sunny Days Logo">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="sunny-days-site-plan.html">Site Plan</a>
+        </nav>
+    </header>
+    <div id="hero">
+        <section class="hero-msg">
+            <h1 id="fixed-msg">Begin your journey</h1>
+            <h4 class="rotating-msg" id="msg_1">If you or your child are ready to start the journey toward healing and growth, we're here to help.</h4>
+            <h4 class="rotating-msg" id="msg_2">Schedule a consultation to learn how therapy can support your goals.</h4>
+            <h4 class="rotating-msg" id="msg_3">Explore our services page to see how we can work together.</h4>
+            <h4 class="rotating-msg" id="msg_4">Reach out through our Contact Form to take the first step.</h4>
+        </section>
+        <div id="hero-box">
+            <img id="hero-img" src="images/tropical_sunrise.webp" alt="tropical sunrise">
+        </div>
+    </div>
+    <main class="content">
+        <div class="middle-section">
+            <section id="portrait">
+                <img id="rachel" src="images/rachel_portrait.png" alt="Portrait of Rachel Day">
+            </section>
+            <section class="intro-card">
+                <div class="soft-introduction">
+                    <h2 id="intro-title">Step into a brighter, calmer, sunnier tomorrow</h2>
+                    <h3 class="intro-msg">At Sunny Days, we believe that every person deserves a space where they feel seen, heard, and supported. Life can bring moments of uncertainty, stress, and emotional pain—especially during adolescence and young adulthood. But it can also bring healing, resilience, and growth. Our mission is to help you find your light, even when the skies feel cloudy.</h3>
+                    <h3 class="intro-msg">Sunny Days offers a welcoming environment for adolescents, teens, young adults, and families to explore emotions, build coping skills, and rediscover balance. Whether you’re facing challenges with anxiety, school pressures, relationships, or life transitions, you don’t have to face them alone.</h3>
+                </div>
+            </section> 
+        </div>
+        <div class="home-grid">
+            <section class="specialties">
+                <h2 id="specialties-title">Our Specialties</h2>
+                <ul>
+                    <li class="specialties-msg">We provide both in-person counseling in a comfortable, private setting and secure telehealth sessions for those who prefer flexibility or live outside the local area. Wherever you are, Sunny Days is here to help you take that first step toward emotional wellness and a brighter tomorrow.</li>
+                </ul>
+            </section>
+            <section class="why-us">    
+                <h2 id="why-title">Why Choose Sunny Days?</h2>
+                <ul>   
+                    <li class="why-msg">At Sunny Days, therapy is not a one-size-fits-all process—it’s a collaborative journey. Our approach combines empathy, evidence-based strategies, and a deep respect for each client’s individual story. We focus on the whole person—mind, body, and spirit—helping clients build resilience and self-understanding that lasts well beyond the therapy room.</li>
+                    <li class="why-msg">Sunny Days was founded by Rachel Day, M.Ed., M.A., LGPC, LSC, a compassionate counselor with a passion for supporting youth and families through life’s challenges. Rachel’s warm, approachable style creates a safe space where healing and personal growth can flourish.</li>
+                </ul>
+            </section>
+            <section class="questions">
+                <h2 id="question-title">Common Questions</h2>
+                <ul>
+                    <li class="question-msg">Do you offer telehealth counseling for minors under the age of 10?</li>
+                    <li class="question-msg">How do I schedule an appointment?</li>
+                    <li class="question-msg">Do you accept insurance?</li>
+                    <li class="question-msg">How long are therapy sessions?</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <section class="top-footer">
+            <div class="circle-background">
+                <a href="index.html" class="logo_link">
+                    <img class="logo" src="images/sunny-days-logo.png" alt="Sunny Days Logo">
+                </a>
+            </div>
+            <p><a href="about.html">About</a></p>
+            <p><a href="services.html">Services</a></p>
+            <p><a href="sunny-days-site-plan.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </section>
+        <section class="bottom-footer">
+            <p>Sunny Days &copy; 2025 - Cruz day</p>
+        </section>
+    </footer>
+    <script>
+        const messages = document.querySelectorAll('.rotating-msg');
+        let index = 0;
+        // Show first message immediately
+        messages[index].classList.add('active');
+        
+        function rotateMessages() {
+            messages[index].classList.remove('active');
+            index = (index + 1) % messages.length;
+            messages[index].classList.add('active');
+        }
+        // Rotate every 4 seconds
+        setInterval(rotateMessages, 4000);
+    </script>
+</body>
+</html>

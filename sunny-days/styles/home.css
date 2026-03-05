@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Ledger&family=Rock+Salt&display=swap');
+
+
+/* General Pag Layout ------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(14px, 1.3vw, 18px);
+    font-family: 'ledger', serif, 'Times New Roman';
+
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hero"
+        "main"
+        "footer";
+}
+/* Header ----------------------------------*/
+header {
+    grid-area: header;
+    background-color: #168AAD;
+
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+}
+.logo_link {
+    justify-self: center;
+}
+.logo {
+    width:80px;
+    max-width: 100%;
+    max-height:100%;
+}
+.circle-background {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 50px;
+}
+nav a:hover {
+    color:black;
+}
+
+/* Hero Section ------------------------*/
+#hero {
+    grid-area: hero;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    min-height: 300px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px black;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#hero-box {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+#hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-msg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#fixed-msg {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-family: 'Rock Salt', 'ledger', serif;
+    z-index: 10;
+}
+.rotating-msg {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    max-width: 90%;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 10;
+} 
+
+.rotating-msg.active {
+    opacity: 1;
+}
+
+/* Main Content -------------------------------*/
+main {
+    grid-area: main;
+    font-size: 18px;
+}
+main h2 {
+    font-size: 25px;
+    padding-left: 20px;
+    color: white;
+}
+main h3 {
+    font-size: 13px;
+    padding-left: 20px;
+}
+/* Portrait */
+.middle-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-areas: 
+        "portrait intro .";
+    gap: 20px;
+    align-items: start;
+    padding: 20px;
+}
+#portrait {
+    grid-area: portrait;
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+#rachel {
+    width: 80%;
+    height: 80%;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid;
+}
+
+/* Intro Section */
+.intro-card {
+    background-color: white;
+    line-height: 1.5em;
+    padding: 20px;
+    box-shadow: 5px 5px 10px black;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 90%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.soft-introduction {
+    grid-area: intro;
+    font-size: 1rem;
+    background-color: #168AAD;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+.intro-card h2 {
+    padding-top: 20px;
+    text-align: center;
+}
+.intro-card h3 {
+    max-width: 100%;
+    margin: 10px 0;
+}
+#intro-title {
+    color: white;
+}
+
+/* Specialties + Why us + Questions Section */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: 
+        "specialties why"
+        "questions questions";
+    background-color: #168AAD;
+}
+li {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    max-width: 80%;
+    list-style-type: disc;
+}
+/* Specialties */
+.specialties {
+    grid-area: specialties;
+}
+
+/* Why Us */
+.why-us {
+    grid-area: why;
+}
+
+/* Questions */
+.questions {
+    grid-area: questions;
+}
+.questions h3 {
+    font-size: 18px;
+    position: relative;
+    left: 30px;
+}
+/*Footer -----------------------------------*/
+footer {
+    grid-area: footer;
+    background-color: #168AAD;
+    height: auto;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+.top-footer, .bottom-footer {
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.top-footer a {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+.top-footer a:hover {
+    color: black;
+}
+.top-footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+.top-footer p:hover {
+    text-decoration: underline;
+}
+.top-footer .social img {
+    padding-top: 15px;
+}
+#site-plan {
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .middle-section {
+        grid-template-columns: 1fr; /* Stack portrait and intro vertically */
+        gap: 20px;
+    }
+
+    .intro-card {
+        margin-top: 0;
+        padding: 20px;
+    }
+
+    .soft-introduction {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+}

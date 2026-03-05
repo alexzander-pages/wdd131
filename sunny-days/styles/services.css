@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Ledger&display=swap');
+
+/* ---------------- GLOBAL ---------------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ledger', serif;
+    background: white;
+}
+
+.page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ---------------- HEADER ---------------- */
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    background: #168AAD;
+    padding: 15px 20px;
+}
+
+.logo_link {
+    justify-self: center;
+}
+
+.logo {
+    width:80px;
+    max-width: 100%;
+    max-height:100%;
+}
+
+.circle-background {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ---------------- HERO ---------------- */
+#hero {
+    display: grid;
+    grid-template-columns: minmax(40px, 1fr) 2fr 1fr minmax(40px, 1fr);
+    grid-template-areas: ". hero-msg hero-box .";
+    padding: 30px 0;
+    max-height: 400px;
+}
+
+.hero-msg {
+    grid-area: hero-msg;
+    padding: 30px;
+}
+
+#hero-box {
+    grid-area: hero-box;
+    display: flex;
+    align-items: center;
+}
+
+#hero-img {
+    max-width: 100%;
+    max-height: 350px;
+}
+.appointment {
+    background-color: white;
+    color: white;
+    border-radius: 50px;
+    padding: 5px;
+    text-decoration: none;
+    text-shadow: 2px 2px 8px black;
+    box-shadow: 5px 5px 10px black;
+}
+.appointment:hover{
+    color: black;
+}
+
+/* ---------------- MIDDLE ---------------- */
+.middle-section {
+    display: grid;
+    grid-template-columns: minmax(280px, 1fr) minmax(400px, 2fr);
+    gap: 30px;
+    padding: 30px;
+}
+
+#group-img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.attention-card {
+    background: white;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+}
+
+.attention-grabber {
+    background: #168AAD;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+/* ---------------- CONTENT ---------------- */
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 30px;
+}
+
+.content section {
+    padding: 20px;
+    border: 2px solid black;
+}
+
+/* ---------------- ROTATING MESSAGE ---------------- */
+
+#prompt-title,
+.prompt h2 {
+    margin-bottom: 0;
+}
+
+/* Container for rotating messages */
+.rotating-container {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.rotating-container::before {
+    content: attr(data-height);
+    display: block;
+    visibility: hidden;
+    font-size: clamp(1rem, 1.2vw, 1.4rem);
+    line-height: 1.5;
+    padding: 0; 
+}
+
+/* Individual rotating messages */
+.rotating-msg {
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: -50px; 
+    line-height: 1.5;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: clamp(1rem, 1.2vw, 1.4rem);
+    pointer-events: none;
+}
+
+/* Active message */
+.rotating-msg.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    background: #168AAD;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}.top-footer, .bottom-footer {
+    color: white;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.top-footer a {
+    color: white;
+    text-decoration: none;
+}
+.top-footer a:hover {
+    color: black;
+    text-decoration: none;
+}
+.top-footer p {
+    font-size: 1.2em;
+}
+.top-footer p:hover {
+    text-decoration: underline;
+    text-decoration: none;
+}
+.top-footer .social img {
+    padding-top: 15px;
+}
+#site-plan {
+    color: white;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 900px) {
+    #hero {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "hero-msg"
+            "hero-box";
+    }
+
+    .middle-section,
+    .content {
+        grid-template-columns: 1fr;
+    }
+}

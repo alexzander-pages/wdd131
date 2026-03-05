@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny Days Services Page</title>
+    <link rel="stylesheet" href="styles/services.css">
+</head>
+<body>   
+    <header>
+        <div class="circle-background logo_link">
+            <a href="index.html">
+                <img class="logo" src="images/sunny-days-logo.png" alt="Sunny Days Logo">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="sunny-days-site-plan.html">Site Plan</a>
+        </nav>
+    </header>
+    <div id="hero">
+        <section class="hero-msg">
+            <h4 class="small-msg" id="msg_1">Therapist in Florida</h4>
+            <h1 id="large-msg">Reach out today-because you deserve your own Sunny Days.</h1>
+            <h4 class="small-msg" id="msg_2">If you or your loved one is ready to begin the journey toward emotional well-being, we’re here to help.</h4>
+            <div class="button-box">
+                <a class="appointment" href="contactus.html">Request Appointment</a>
+            </div>
+        </section>
+        <div id="hero-box">
+            <img id="hero-img" src="images/sappling.png" alt="Sappling">
+        </div>
+    </div>
+    <main class="home-grid">
+        <div class="middle-section">
+            <section id="friends">
+                <img id="group-img" src="images/group_of_teens.png" alt="Group of teens">
+            </section>
+            <section class="attention-card">
+                <div class="attention-grabber">
+                    <h3 class="intro-msg">At Sunny Days, we provide a range of counseling services designed to support individuals and families through every stage of life. Our services are offered in-person and via secure telehealth sessions, allowing clients to choose the format that best fits their comfort and schedule.</h3>
+                </div>
+            </section>
+        </div>
+        <div class="content">
+            <section class="prompt">
+                <h2 id="prompt-title">Ready to Begin?</h2>
+                <ul class="rotating-container"
+                    data-height="If you or your loved one is ready to begin the journey toward emotional well-being, we’re here to help.">
+                    <li class="rotating-msg active">If you or your loved one is ready to begin the journey toward emotional well-being, we’re here to help.</li>
+                    <li class="rotating-msg">Schedule a consultation or first session.</li>
+                    <li class="rotating-msg">Explore our approach and find what fits your needs.</li>
+                    <li class="rotating-msg">Reach out today—because you deserve your own Sunny Days.</li>
+                </ul>
+            </section>
+            <section class="individual">
+                <h2 id="individual-title">Individual Counseling</h2>
+                <ul>
+                    <li class="individual-msg">For adolescents, teens, and young adults</li>
+                    <li class="individual-msg">Life can feel overwhelming at times—especially when you’re managing school, friendships, identity, or the transition into adulthood. Individual counseling offers a safe, supportive space to explore emotions, gain insight, and build healthy coping skills.</li>
+                    <li class="individual-msg">Common areas of focus include:</li>
+                    <li class="individual-msg">Anxiety, depression, and mood regulation</li>
+                    <li class="individual-msg">Academic or school-related stress</li>
+                    <li class="individual-msg">Self-esteem and self-identity</li>
+                    <li class="individual-msg">Life transitions and decision-making</li>
+                    <li class="individual-msg">Relationship and communication challenges</li>
+                    <li class="individual-msg">Through empathy and evidence-based approaches, Rachel helps clients build confidence, emotional awareness, and resilience.</li>
+                </ul>
+            </section>
+            <section class="school">
+                <h2 id="school-title">School and Academic Support</h2>
+                <ul>
+                    <li class="school-msg">As a licensed school counselor, Rachel has a deep understanding of the academic and social pressures students face. Sunny Days offers support for students and families navigating educational stress, motivation, and self-advocacy.</li>
+                    <li class="school-msg">Services may include:</li>
+                    <li class="school-msg">Academic stress management</li>
+                    <li class="school-msg">Organization and executive functioning skills</li>
+                    <li class="school-msg">School transitions (elementary to middle, middle to high school, high school to college)</li>
+                    <li class="school-msg">Consultation with parents or educators on student well-being</li>
+                </ul>
+            </section>
+            <section class="telehealth">
+                <h2 id="telehealth-title">Telehealth Counseling</h2>
+                <ul>
+                    <li class="telehealth-msg">For clients who prefer flexibility or live outside the local area, telehealth counseling offers the same high-quality, confidential care through a secure online platform. Whether you’re balancing a busy schedule or feel most comfortable at home, virtual sessions can make therapy more accessible and convenient.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <section class="top-footer">
+            <div class="circle-background">
+                <a href="index.html" class="logo_link">
+                    <img class="logo" src="images/sunny-days-logo.png" alt="Sunny Days Logo">
+                </a>
+            </div>
+            <p><a href="about.html">About</a></p>
+            <p><a href="services.html">Services</a></p>
+            <p><a href="sunny-days-site-plan.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </section>
+        <section class="bottom-footer">
+            <p>Sunny Days &copy; 2025 - Cruz day</p>
+        </section>
+    </footer>
+    <script>
+        const messages = document.querySelectorAll('.rotating-msg');
+        let index = 0;
+        // Show first message immediately
+        messages[index].classList.add('active');
+        
+        function rotateMessages() {
+            messages[index].classList.remove('active');
+            index = (index + 1) % messages.length;
+            messages[index].classList.add('active');
+        }
+        // Rotate every 4 seconds
+        setInterval(rotateMessages, 4000);
+    </script>
+</body>
+</html>
