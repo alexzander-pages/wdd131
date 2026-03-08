@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&family=Give+You+Glory&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid #999595;
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+    min-width: 550px;
+}
+
+#titleLogo {
+    max-width: 100px;
+}
+
+#titleName {
+    font-family: 'Bilbo', 'Give You Glory';
+    margin: 0;
+    align-self: end;
+    font-size: 60px;
+}
+
+#query {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#recipeQuery {
+    height: 30px;
+    flex: 1;
+    padding: 0 10px;
+    width: 100%;
+}
+
+#searchIcon img {
+    width: 25px;
+}
+
+main {
+    padding-top: 20px;
+}
+
+#content {
+    padding-left: 10px;
+}
+.recipeCard {        
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+}
+.recipeImage {
+    width: 100%;
+    max-width: 550px;
+}
+
+#dessertButton {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.recipeItem {
+    color: rgb(0, 183, 255);
+    font-family: 'Bilbo', 'Give You Glory';
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+.rating {
+    font-size: 25px;
+}
+
+.recipeDescription {
+    display: none;
+
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.social img {
+    width: 30px;
+}
+
+.social {
+    align-self: center;
+    padding: 10px;
+}
+
+#freepikLink {
+    padding: 10px;
+}
+
+@media screen and (min-width: 850px) {
+    #content {
+        padding-left: 20px;
+    }
+    .recipeCard {
+        flex-direction: row;
+    }
+    #dessertButton {
+        margin: 0px;
+
+    }
+    .recipeDescription {
+        display: flex;
+    }
+    footer {
+        flex-direction: row-reverse;
+        align-content: space-between;
+        width: 100%
+    }
+    .social {
+        padding: 0px;
+    }
+    #freepikLink {
+        flex: 1;
+        padding: 0px;
+    }
+}
