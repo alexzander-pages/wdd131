@@ -23,19 +23,20 @@
 </head>
 <body>
     <header>
-        <section id="title">
-            <img id="titleLogo" src="images/recipe-book.png" alt="Recipe Book Logo">
-            <h1 id="titleName">RECIPEBOOK</h1>
+        <section class="title">
+            <img class="titleLogo" src="images/recipe-book.png" alt="Recipe Book Logo">
+            <h1 class="titleName">RECIPEBOOK</h1>
         </section>
-        <form id="query">
+        <form class="query">
+            <label for="recipeQuery"></label>
             <input
                 type="text"
                 id="recipeQuery"
                 name="recipeQuery"
-                placeholder="FInd a recipe"
+                placeholder="Find a recipe"
                 required
                 />
-            <button id="searchIcon" type="submit">
+            <button class="searchIcon" type="submit">
                 <img src="images/search.svg" alt="Search Button">
             </button>
         </form>
@@ -43,8 +44,8 @@
     <main>
         <section class="recipeCard">
             <img class="recipeImage" src="images/apple-crisp.jpg" alt="Apple Crisp">
-            <div id="content">
-                <button id="dessertButton" type="submit">dessert</button>
+            <div class="content">
+                <button class="dessertButton">dessert</button>
                 <h2 class="recipeItem">APPLE CRISP</h2>
                 <span
                 class="rating"
@@ -68,7 +69,7 @@
             <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
             <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
         </div>
-        <a id="freepikLink" href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+        <a class="freepikLink" href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
     </footer>
 </body>
 </html>

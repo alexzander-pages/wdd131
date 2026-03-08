@@ -16,24 +16,23 @@ header {
     border-bottom: 1px solid #999595;
 }
 
-#title {
+.title {
     display: flex;
     flex-direction: row;
-    min-width: 550px;
 }
 
-#titleLogo {
+.titleLogo {
     max-width: 100px;
 }
 
-#titleName {
-    font-family: 'Bilbo', 'Give You Glory';
+.titleName {
+    font-family: 'Bilbo', 'Give You Glory', cursive;
     margin: 0;
     align-self: end;
     font-size: 60px;
 }
 
-#query {
+.query {
     display: flex;
     width: 100%;
     margin-top: 10px;
@@ -47,7 +46,7 @@ header {
     width: 100%;
 }
 
-#searchIcon img {
+.searchIcon img {
     width: 25px;
 }
 
@@ -55,13 +54,13 @@ main {
     padding-top: 20px;
 }
 
-#content {
+.content {
     padding-left: 10px;
 }
 .recipeCard {        
     display: flex;
     flex-direction: column;
-    border: 2px solid #000000;
+    border: 2px solid black;
     border-radius: 15px;
     padding: 20px;
     width: 100%;
@@ -71,14 +70,14 @@ main {
     max-width: 550px;
 }
 
-#dessertButton {
+.dessertButton {
     font-size: 20px;
     margin-top: 10px;
 }
 
 .recipeItem {
     color: rgb(0, 183, 255);
-    font-family: 'Bilbo', 'Give You Glory';
+    font-family: 'Bilbo', 'Give You Glory', cursive;
     font-size: 25px;
     margin-bottom: 0px;
 }
@@ -108,18 +107,18 @@ footer {
     padding: 10px;
 }
 
-#freepikLink {
+.freepikLink {
     padding: 10px;
 }
 
 @media screen and (min-width: 850px) {
-    #content {
+    .content {
         padding-left: 20px;
     }
     .recipeCard {
         flex-direction: row;
     }
-    #dessertButton {
+    .dessertButton {
         margin: 0px;
 
     }
@@ -134,7 +133,7 @@ footer {
     .social {
         padding: 0px;
     }
-    #freepikLink {
+    .freepikLink {
         flex: 1;
         padding: 0px;
     }
