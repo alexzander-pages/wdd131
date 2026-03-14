@@ -289,21 +289,19 @@ form.addEventListener('submit', search);
 function search(event) {
     event.preventDefault();
 
-    let recipeQuery = document.querySelector('#recipeQuery').value;
-
+	let recipeQuery = document.querySelector('#recipeQuery').value.toLowerCase();
     let filteredRecipes = recipes.filter(function(recipe){
         return (
-            recipe.name.toLowerCase().includes(recipeQuery.toLowerCase()) ||
-            recipe.description.toLowerCase().includes(recipeQuery.toLowerCase()) ||
-            recipe.tags.find(tag => tag.toLowerCase().includes(recipeQuery.toLowerCase()))
-        );
+            recipe.name.toLowerCase().includes(recipeQuery) ||
+            recipe.description.toLowerCase().includes(recipeQuery) ||
+			recipe.tags.some(tag => tag.toLowerCase().includes(recipeQuery))        );
     });
 
     recipeContainer.innerHTML = "";
 
-    if (filteredRecipes.length > 0) {
-        renderRecipe(filteredRecipes[0]); // show only the first match
-    }
+    filteredRecipes.forEach(function(recipe){
+        renderRecipe(recipe);
+    });
 }
 
 function tagTemplate(tags) {
