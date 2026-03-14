@@ -70,7 +70,7 @@ main {
     max-width: 550px;
 }
 
-.dessertButton {
+.tagButton {
     font-size: 20px;
     margin-top: 10px;
 }
@@ -118,9 +118,8 @@ footer {
     .recipeCard {
         flex-direction: row;
     }
-    .dessertButton {
+    .tagButton {
         margin: 0px;
-
     }
     .recipeDescription {
         display: flex;
