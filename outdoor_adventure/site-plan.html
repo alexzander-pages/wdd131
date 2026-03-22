@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<title>Arizona Adventures Site Plan</title>
+		<link rel="stylesheet" href="styles/site-plan.css" />
+        <script src="javascript/site-plan.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>Arizona Adventures Site Plan</h1>
+			<h2>Cruz Day</h2>
+			<h2>WDD 131-A2</h2>
+			<!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+		</header>
+		<main>
+			<!-- ------------------------Steps 2-3------------------------------ -->
+			<hr />
+			<h2>Overview</h2>
+			<h3>Purpose</h3>
+			<p>This website is intended to help users discover outdoor activities across Arizona, including hiking trails, scenic viewpoints, and adventure spots. It provides easy-to-navigate information so users can plan trips based on location, difficulty, and activity type.</p>
+			<!-- In 2–3 sentences, write a purpose statement for your site and write about your intended audience. -->
+
+			<h3>Audience</h3>
+			<p>We hope to help tourists, local residents, students, and outdoor enthusiasts looking for fun and accessible adventures in Arizona.</p>
+			<!-- In 2–3 sentences, write a purpose statement for your site and write about your intended audience. -->
+
+			<h3>Dynamic elements</h3>
+			<p>A search bar will use JavaScript to capture user input and dynamically filter displayed adventure cards based on keywords such as "hiking" or "waterfall".</p>
+			<p>Filter buttons will use JavaScript event listeners to sort and display activities by type (hiking, sightseeing, camping) and difficulty level (easy, moderate, hard).</p>
+			<p>Adventure cards will update in real time using JavaScript DOM manipulation without requiring the page to reload.</p>
+			<p>A favorite button will use JavaScript to store selected adventures in localStorage so users can view them later on the Favorites page.</p>
+			<p>A "show/hide details" feature will use JavaScript to toggle additional information, improving readability and reducing clutter.</p>
+			<!-- Describe how you will use Javascript to add dynamic elements to your site. -->
+
+			<hr />
+			<h2>Branding</h2>
+			<div class="branding">
+				<h3>Website Logo</h3>
+				<!-- Choose a logo images for your personal site. You can create one if you'd like. Sites like Canva.com or Adobe Logo Maker or freelogodesign.org can be options if you don't make yours from scratch. -->
+				<img src="images/arizona-adventures-logo.png" alt="Arizona Adventures Logo" />
+			</div>
+			<hr />
+			<h2>Style Guide</h2>
+			<section class="styleGuide">
+				<!-- ------------------------Steps 4-8------------------------------ -->
+
+				<h3>Color Palette</h3>
+				<!--  Choose a color scheme and one or more fonts that you think will work well and enter the information into the plan's HTML and CSS.  -->
+
+				<!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+				<div class="paletteLink">
+					<p>Palette URL:</p>
+					<a
+						href="https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c"
+						target="_blank"
+						>https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c</a
+					>
+				</div>
+				<table class="colors">
+					<tbody>
+						<tr>
+							<th>Primary</th>
+							<th>Secondary</th>
+							<th>Accent 1</th>
+							<th>Accent 2</th>
+						</tr>
+						<!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+						<tr>
+							<td class="primary">#C1440E</td>
+							<td class="secondary">#2E4057</td>
+							<td class="accent1">#F4A261</td>
+							<td class="accent2">#AABD8C</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<!-- ------------------------Step 9------------------------------ -->
+
+				<h3>Typography</h3>
+				<!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Why did you choose what you did?  Make sure to review the list of web safe fonts at W3Schools.org as a starting point.  Think also about which of your colors above you might use for background and font colors. -->
+				<div class="typography">
+					<h4>
+						Heading Font: Montserrat
+						<!-- change this -->
+					</h4>
+					<h4>
+						Paragraph Font: Open Sans
+						<!-- change this -->
+					</h4>
+				</div>
+				<h4>Normal paragraph example</h4>
+				<p>Arizona Adventures provides detailed information about outdoor destinations, helping users plan safe and exciting trips across the state.</p>
+				<h4>Colored paragraph example</h4>
+				<p class="colored">Arizona Adventures provides detailed information about outdoor destinations, helping users plan safe and exciting trips across the state.</p>
+
+				<!-- ------------------------Step 10------------------------------ -->
+
+				<h3>Navigation</h3>
+				<!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
+				<nav>
+					<a href="index.html">Home</a>
+					<a href="adventures.html">Adventures</a>
+					<a href="favorites.html">Favorites</a>
+					<a href="about.html">About</a>
+				</nav>
+			</section>
+			<hr />
+
+			<h2>Content</h2>
+            <!-- Write the text that will be on your project, generate any data that you will use, and find the images/icons/graphics you need. -->
+			<section class="allContent">	
+				<h2>Home page</h2>
+				<section class="homePageContent">
+					<img class="grandCanyonPanorama" src="images/grand_canyon_panorama.jpg" alt="Grand Canyon Panoramic">
+					<h3>Explore Arizona</h3>
+					<p>Discover breathtaking hikes, scenic views, and unforgettable outdoor adventures across Arizona.</p>
+					<button>Start Exploring</button>
+					<div class="introductionSection">
+						<p>Arizona is home to some of the most stunning landscapes in the United States, from towering red rock formations to vast desert plains and deep canyons. Whether you're an experienced hiker or just looking for a peaceful place to enjoy nature, there’s something here for everyone.</p>
+						<p>Arizona Adventures helps you easily find and explore the best outdoor destinations across the state.</p>
+					</div>
+					<div class="featuredAdventuresSection">
+						<h3>Featured Adventures</h3>
+						<p>Here are some of the most popular places to explore:</p>
+						<p>Camelback Mountain</p>
+						<p>A challenging hike with steep trails and rewarding panoramic views of the Phoenix area.</p>
+						<img src="images/camelback_mountain.webp" alt="Camelback Mountains">
+						<p>Horseshoe Bend</p>
+						<p>A stunning viewpoint where the Colorado River curves through towering canyon walls.</p>
+						<img src="images/horseshoe_bend.jpg" alt="Horseshoe Bend">
+						<p>Sedona Red Rocks</p>
+						<p>Famous for its vibrant red rock formations and scenic hiking trails for all skill levels.</p>
+						<img src="images/sedona_red_rock.jpeg" alt="Sedona Red Rock">
+					</div>
+					<div class="whyUseSection">
+						<h3>Why Use Arizona Adventures?</h3>
+						<ul>
+							<li>Easily search for outdoor activities</li>
+							<li>Filter by difficulty and type</li>
+							<li>Discover new places across Arizona</li>
+							<li>Save your favorite adventures</li>
+						</ul>
+					</div>
+					<div class="safetyReminderSection">
+						<img src="images/safety_equipment.webp" alt="Stay Safe with the proper equipment and resources">
+						<h3>Stay Safe While Exploring</h3>
+						<p>Always bring water, wear proper gear, and check weather conditions before heading out. Arizona's environment can be extreme, so preparation is key to a safe and enjoyable adventure.</p>
+					</div>
+					<div class="callToAction">
+						<h3>Ready to Explore?</h3>
+						<button>View All Adventures</button>
+					</div>
+				</section>
+				<h2>Adventures Page</h2>
+				<section class="adventuresPageContent">
+					<img src="images/sedona_red_rock_panoramic.jpg" alt="Sedona Red Rock Panoramic">
+					<h3>Find your Next Adventure</h3>
+					<p>Explore outdoor destinations across Arizona. Use the search and filters below to find hikes, scenic views, and activities that match your interests and skill level.</p>
+					<div class="searchAndFilterSection">
+						<label for="searchAdventures">Search Adventures</label>
+						<input
+						type="text"
+						id="searchAdventures"
+						name="searchAdventures"
+						placeholder="Search adventures (e.g., hiking, easy, Phoenix...)"
+						required
+						/>
+						<p>Filter Options:</p>
+						<ul>
+							<li>Activity Type: Hiking, Sightseeing, Camping</li>
+							<li>Difficulty: Easy Moderate, Hard</li>
+						</ul>
+					</div>
+					<div class="mainAdventuresContent">
+						<section class="adventureCards">
+							<img src="images/camelback_mountain_trail_card.jpg" alt="Camelback Mountains">
+							<h4>Camelback Mountain</h4>
+							<ul>
+								<li>Type: Hiking</li>
+								<li>Difficulty: Hard</li>
+								<li>Description: A steep and challenging hike that rewards visitors with incredible panoramic views of the Phoenix skyline. Best suited for experienced hikers.</li>
+							</ul>
+						</section>
+						<section class="adventureCards">
+							<img src="images/horseshoe_bend_card.jpeg" alt="Horseshoe Bend">
+							<h4>Horseshoe Bend</h4>
+							<ul>
+								<li>Type: Sightseeing</li>
+								<li>Difficulty: Easy</li>
+								<li>Description: A short walk leads to one of the most photographed views in Arizona, where the Colorado River curves dramatically through the canyon.</li>
+							</ul>
+						</section>
+						<section class="adventureCards">
+							<img src="images/havasu_falls_card.jpg" alt="Havasu Falls">
+							<h4>Havasu Falls</h4>
+							<ul>
+								<li>Type: Hiking</li>
+								<li>Difficulty: Moderate</li>
+								<li>Description: A longer hike leads to stunning turquoise waterfalls deep within the canyon. A truly unforgettable destination.</li>
+							</ul>
+						</section>
+						<section class="adventureCards">
+							<img src="images/saguaro_sunset_card.jpg" alt="Saguaro National Park">
+							<h4>Saguaro National Park</h4>
+							<ul>
+								<li>Type: Hiking/Sightseeing</li>
+								<li>Difficulty: Easy-Moderate</li>
+								<li>Description: Walk among towering saguaro cacti and enjoy peaceful desert scenery with trails for all experience levels.</li>
+							</ul>
+						</section>
+						<section class="adventureCards">
+							<img src="images/sedona_red_rock_card.webp" alt="Sedona Red Rocks">
+							<h4>Sedona Red Rocks</h4>
+							<ul>
+								<li>Type: Hiking/Sightseeing</li>
+								<li>Difficulty: Easy-Moderate</li>
+								<li>Description: Famous for its red rock formations and scenic beauty, Sedona offers trails for beginners and experienced hikers alike.</li>
+							</ul>
+						</section>
+						<section class="adventureCards">
+							<img src="images/flag_staff_trail_card.jpg" alt="Flagstaff">
+							<h4>Flagstaff</h4>
+							<ul>
+								<li>Type: Hiking/Camping</li>
+								<li>Difficulty: Easy-Moderate</li>
+								<li>Description: A cooler mountain escape with forests, trails, and great camping opportunities away from the desert heat.</li>
+							</ul>
+						</section>
+						<section class="adventureCards">
+							<img src="images/grand_canyon_card.jpg" alt="Grand Canyon National Park">
+							<h4>Grand Canyon National Park</h4>
+							<ul>
+								<li>Type: Sightseeing/Hiking</li>
+								<li>Difficulty: Easy-Hard</li>
+								<li>Description: One of the most famous natural wonders in the world, offering breathtaking views and unforgettable hiking experiences.</li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			
+				<h2>Favorites Page</h2>
+				<section class="favoritesPageContent">
+					<h3>Your Favorite Adventures</h3>
+					<p>Keep track of the places you want to explore across Arizona. Your saved adventures will appear here so you can easily plan your next trip.</p>
+					<div class="mainFavoritesContent">
+						<p>When Favorites Exist:</p>
+						<ul>
+							<li>Name</li>
+							<li>Location</li>
+							<li>Type & Difficulty</li>
+							<li>Description</li>
+							<li>Remove Button (X)</li>
+						</ul>
+						<p>When No Favorites Exist</p>
+						<div>
+							<p>Empty State Message: "You haven't added any favorites yet."</p>
+						</div>
+					</div>
+					<div>
+						<p>Feature Description</p>
+						<p>Users can save adventures by clicking a heart icon in the Adventures page. The Favorites page dynamically loads and displays the saved items.</p>
+					</div>
+				</section>
+				<h2>About Page</h2>
+				<section class="aboutPageContent">
+					<img src="images/grand_canyon_panorama.jpg" alt="Grand Canyon">
+					<h3>About Arizona Adventures</h3>
+					<p>Learn more about the purpose behind this site and the inspiration for exploring the outdoors across Arizona.</p>
+					<div class="aboutStatement">
+						<img src="images/about_section_card.webp" alt="Beautiful lake view">
+						<h4>About the Website</h4>
+						<p>As a new resident of Arizona and an advocate for adventure, I made Arizona Adventures to help people discover and explore the incredible outdoor destinations found throughout Arizona. From desert trials to mountain forests, the state offers a wide variety of landscapes and activities for all types of adventurers.</p>
+					</div>
+					<div class="missionStatement">
+						<img src="images/mission_section.webp" alt="A single individual looking out over the scenic view">
+						<h4>Mission Statement</h4>
+						<p>Our mission is to inspire people to explore nature, stay active, and experience the beauty of Arizona in a safe and accessible way.</p>
+					</div>
+					<div class="audienceStatement">
+						<img src="images/audience_section.jpeg" alt="Group of friends sitting together in nature">
+						<h4>Who This Site Is For</h4>
+						<p>This site was designed for:</p>
+						<ul>
+							<li>Beginners looking for easy outdoor activities</li>
+							<li>Experienced hikers searching for new challenges</li>
+							<li>Tourists visiting Arizona</li>
+							<li>Locals wanting to explore new places</li>
+						</ul>
+						<p>No matter your experience level, Arizona Adventures provides something for everyone.</p>
+					</div>
+					<div class="whyExistStatement">
+						<h4>Why This Site Exists</h4>
+						<p>With so many amazing places to visit, it can be overwhelming to decide where to go. Arizona Adventures simplifies this process by organizing outdoor locations into an easy-to-use format with helpful details and filters.</p>
+					</div>
+					<div class="outdoorResponsibilityStatement">
+						<img src="images/responsibility_section.webp" alt="Warning sign">
+						<h4>Outdoor Responsibility</h4>
+						<p>Exploring nature comes with responsibility. Visitors should always:</p>
+						<ul>
+							<li>Respect the environment</li>
+							<li>Follow the trail guidelines</li>
+							<li>Stay prepared with water and proper gear</li>
+							<li>Leave no trace behind</li>
+						</ul>
+						<p>Protecting these natural areas ensures they remain beautiful for generations.</p>
+					</div>
+					<div class="futureGoals">
+						<h4>Future Goals</h4>
+						<p>In the future, Arizona Adventures may include:</p>
+						<ul>
+							<li>Interactive Maps</li>
+							<li>User reviews and ratings</li>
+							<li>More detailed trail guides</li>
+							<li>Expanded locations beyond Arizona</li>
+							<li>"Offline Mode" for wifi dead zones</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<div class="wireframes">
+				<h2>Wireframes</h2>
+				<!-- Create a wireframe for your project. Add your wireframe as an image or link to the site plan. -->
+				<p>
+					Create two wireframes for your site. One for each page and list them
+					here
+				</p>
+
+				<h3>Home</h3>
+				<p>
+					By clicking the heart certain adventures, locations, and trails can be saved to the favorites page.
+				</p>
+				<img src="images/home_page_wireframe.png" alt="home page wireframe" />
+
+				<h3>Adventures</h3>
+				<img src="images/adventures_page_wireframe.png" alt="Adventures page wireframe" />
+				
+				<h3>Favorites</h3>
+					<p>
+						When No Favorites Exist the page will display a simple message, "You haven't added any favorites yet."
+					</p>
+				<section class="favoritesWireframe">
+					<img src="images/favorites_page_wireframe.png" alt="Favorites Page wireframe" />
+					<img src="images/Favorites_page_wireframe_empty.png" alt="Empty Favorites Page Wireframe">
+				</section>
+				<h3>About</h3>
+				<img src="images/about_page_wireframe.png" alt="About page wireframe" />
+			</div>
+		</main>
+	</body>
+</html>

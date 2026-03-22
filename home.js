@@ -5,8 +5,10 @@ const proveBtn = document.querySelector('#proveBtn');
 const ponderBtn = document.querySelector('#ponderBtn');
 const proveNav = document.querySelector('#proveNav');
 const ponderNav = document.querySelector('#ponderNav');
-const sunnyNav = document.querySelector('#sunnyNav')
-const sunnyBtn = document.querySelector('#sunnyBtn')
+const sunnyNav = document.querySelector('#sunnyNav');
+const sunnyBtn = document.querySelector('#sunnyBtn');
+const adventureNav = document.querySelector('#adventureNav');
+const adventureBtn = document.querySelector('#adventureBtn');
 
 menuBtn.addEventListener('click', () => {
     menuSection.classList.toggle('hide');
@@ -22,4 +24,8 @@ ponderBtn.addEventListener('click', () => {
 
 sunnyBtn.addEventListener('click', () => {
     sunnyNav.classList.toggle('hide');
+});
+
+adventureBtn.addEventListener('click', () => {
+    adventureNav.classList.toogle('hide');
 });

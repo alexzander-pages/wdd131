@@ -82,3 +82,19 @@ nav a {
     font-size: 0.7em;
     padding: 10px;
 }
+#adventureNav {
+    font-size: 0.7em;
+}
+#adventureNav a {
+    text-decoration: none;
+}
+#adventureNav a:hover {
+    color:black;
+}
+#adventureBtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 0.7em;
+    padding: 10px;
+}
