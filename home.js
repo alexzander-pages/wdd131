@@ -27,5 +27,5 @@ sunnyBtn.addEventListener('click', () => {
 });
 
 adventureBtn.addEventListener('click', () => {
-    adventureNav.classList.toogle('hide');
+    adventureNav.classList.toggle('hide');
 });
