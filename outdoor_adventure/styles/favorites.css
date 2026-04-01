@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+    margin: 0;
+}
+
+h1, a, h3 {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+header {
+    background-color: #2E4057;
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+}
+
+.logo_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    max-width: 200%;
+    max-height: 200%;
+    display: block;
+}
+
+.circle-background {
+    justify-self: center;;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+}
+
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 50px;
+}
+
+nav a:hover {
+    color:black;
+}
+
+/* Hero Section -----------------------------------*/
+
+
+/* -------------------------------Main-----------------------------*/
+
+
+/*------------------------------------Footer -----------------------------------*/
+footer {
+    background-color: #2E4057;
+    height: auto;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+.top-footer, .bottom-footer {
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.top-footer a {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+.top-footer a:hover {
+    color: black;
+}
+.top-footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+.top-footer .social img {
+    padding-top: 15px;
+}
+#site-plan {
+    color: white;
+}
+
+@media (max-width: 6000px) {}
+
+@media (max-width: 1000px) {}
+

@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+    margin: 0;
+}
+
+h1, a, h3 {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+header {
+    background-color: #2E4057;
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+}
+
+.logo_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    max-width: 200%;
+    max-height: 200%;
+    display: block;
+}
+
+.circle-background {
+    justify-self: center;;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+}
+
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 50px;
+}
+
+nav a:hover {
+    color:black;
+}
+
+/* Hero Section -----------------------------------*/
+.heroCard {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.heroMsg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#invitingMsg {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-family: 'Rock Salt', 'ledger', serif;
+    z-index: 10;
+}
+
+.startButton {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    background-color: #2E4057;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border-radius: 50px;
+    color: white;
+}
+
+.startButton:hover {
+    background-color: black;
+    color: white;
+}
+
+.challengeMsg {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    max-width: 90%;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    z-index: 10;
+} 
+
+.hero-box {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.grandCanyonPanorama {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* -------------------------------Main-----------------------------*/
+main {
+    margin: 20px;
+}
+
+.introductionSection p {
+    align-self: center;
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.featuredTextContent {
+    text-align: center;
+}
+
+.featuredCardsGallery {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.featuredAdventuresCards {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.featuredAdventuresCards img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding: 2px;
+    background-color: white;
+    box-shadow: 5px 5px 15px black;
+    display: block;
+    margin: 0 auto;
+}
+
+.featuredAdventuresCards p {
+    padding: 20px;
+}
+
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+}
+
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px; 
+    font-size: 1.5em;
+}
+
+.cardName {
+    text-align: center;
+}
+
+.infoGrid {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.infoGrid > div {
+    flex: 1;            
+    min-width: 250px;  
+    max-width: 300px;
+}
+
+.whyUseSection h3, .safetyReminderSection h3 {
+    text-align: center;
+}
+
+.whyUseSection ul {
+    padding-left: 20px;
+    margin: 0;
+    list-style-position: inside;
+    line-height: 1.6;
+}
+.whyUseSection li {
+    margin-bottom: 5px;
+
+}
+.infoImg {
+    object-fit: cover;
+    padding: 2px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 5px 5px 15px black;
+    display: block;
+    margin: 0 auto;
+}
+
+.safetyReminderSection {
+    text-wrap: wrap;
+}
+
+.callToAction {
+    text-align: center;
+}
+
+.callToAction .ctaButton {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #2E4057;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.callToAction .ctaButton:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+}
+
+/*------------------------------------Footer -----------------------------------*/
+footer {
+    background-color: #2E4057;
+    height: auto;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+.top-footer, .bottom-footer {
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.top-footer a {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+.top-footer a:hover {
+    color: black;
+}
+.top-footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+.top-footer .social img {
+    padding-top: 15px;
+}
+#site-plan {
+    color: white;
+}
+
+@media (max-width: 6000px) {}
+
+@media (max-width: 1000px) {}
+

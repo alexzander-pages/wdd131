@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body { 
+    font-family: 'Open Sans', Arial, sans-serif; 
+    font-size: 15px; 
+    margin: 0; 
+} 
+h1, a, h3 { 
+    font-family: 'Montserrat', Arial, sans-serif; 
+} 
+header { 
+    background-color: #2E4057; 
+    display: grid; 
+    grid-template-columns: 150px auto; 
+    align-items: center; 
+} 
+.logo_link { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+.logo { 
+    width: 100px; 
+    height: 100px; 
+    max-width: 200%; 
+    max-height: 200%; 
+    display: block; 
+} 
+.circle-background { 
+    justify-self: center; 
+    width: 100px; 
+    height: 100px; 
+    background-color: white; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+nav { 
+    display: flex; 
+    justify-content: end; 
+} 
+nav a { 
+    text-align: center; 
+    color: white; 
+    text-decoration: none; 
+    padding: 50px; 
+} 
+nav a:hover { 
+    color:black; 
+} 
+/* Hero Section -----------------------------------*/ 
+.heroCard { 
+    position: relative; 
+    width: 100%; 
+    height: 50vh; 
+    min-height: 300px; 
+    overflow: hidden;
+} 
+.heroMsg { 
+    position: relative; 
+    width: 100%; 
+    height: 100%; 
+} 
+#invitingMsg {
+    position: absolute; 
+    top: 5%; 
+    left: 5%; 
+    margin: 0; 
+    color: white; 
+    text-shadow: 2px 2px 8px black; 
+    font-size: clamp(1.5rem, 4vw, 3rem); 
+    font-family: 'Rock Salt', 'ledger', serif; 
+    z-index: 10; 
+}     
+.startButton { 
+    position: absolute; 
+    top: 20%; 
+    left: 5%; 
+    background-color: #2E4057; 
+    outline: none; 
+    border: none; 
+    cursor: pointer; 
+    padding: 0.5em 1em; 
+    border-radius: 50px; 
+    color: white; 
+} 
+.startButton:hover { 
+    background-color: black; 
+    color: white; 
+} 
+.challengeMsg { 
+    position: absolute; 
+    bottom: 5%; 
+    left: 5%; 
+    margin: 0; 
+    color: white; 
+    text-shadow: 2px 2px 8px black; 
+    max-width: 90%; 
+    font-size: clamp(1rem, 2.5vw, 1.5rem); 
+    z-index: 10; 
+} 
+.hero-box { 
+    position: absolute; 
+    inset: 0; 
+    z-index: -1; 
+} 
+.grandCanyonPanorama { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+} 
+/*------------------------------------Query-------------------------------------*/ 
+.queryBox { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+} 
+.searchAndFilterSection { 
+    display: flex; 
+    width: 40%; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+} 
+#searchAdventures { 
+    height: 30px; 
+    flex: 1; 
+    padding: 0 10px; 
+    width: 100%; 
+} 
+.searchIcon img {
+    width: 25px; 
+} 
+/* ------------------------------------Main-------------------------------------*/ 
+/* ------------------ Adventure Gallery ------------------ */ 
+.adventureCardsGallery { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    margin: 20px auto; 
+    max-width: 1200px; 
+} 
+.adventureCards { 
+    width: 350px; 
+    height: auto; 
+    background-color: white; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3); 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    transition: transform 0.3s; 
+    cursor: pointer; 
+} 
+.adventureCards:hover { 
+    transform: scale(1.03); 
+} 
+.adventureCards img { 
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+} 
+.cardName { 
+    text-align: center; 
+    font-size: 1.2rem; 
+    margin: 10px 0; 
+} 
+.AdventureContent { 
+    list-style: none; 
+    padding: 0 10px 10px 10px; 
+    width: 90%; 
+} 
+.AdventureContent li { 
+    margin-bottom: 5px; 
+} 
+/* ------------------ Modal Viewer ------------------ */ 
+dialog { 
+    width: 90%; 
+    max-width: 800px; 
+    background-color: rgba(0,0,0,0.85); 
+    border: none; 
+    border-radius: 10px; 
+    padding: 10px; 
+    position: relative; 
+} 
+dialog img { 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 5px; 
+} 
+.close-viewer { 
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    font-size: 1.2em; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    background-color: rgba(255,255,255,0.8); 
+    border: none; 
+    border-radius: 5px; 
+} 
+.modalCard {
+    color: white;
+    text-align: center;
+}
+
+.modalCard img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modalCard h2 {
+    margin-top: 15px;
+}
+
+.modalCard p {
+    margin: 10px 0;
+}
+/*------------------------------------Footer -----------------------------------*/ 
+footer { 
+    background-color: #2E4057; 
+    height: auto; 
+    padding: 10px 30px; 
+    box-sizing: border-box; 
+} 
+.top-footer, .bottom-footer { 
+    color: white; 
+    padding: 10px 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    font-size: 0.9rem; 
+} 
+.top-footer a { 
+    margin: 0; color: white; 
+    text-decoration: none; 
+} 
+.top-footer a:hover { 
+    color: black; 
+} 
+.top-footer p { 
+    margin: 0; 
+    font-size: 1.2em; 
+} 
+.top-footer .social img { 
+    padding-top: 15px; 
+} 
+#site-plan { 
+    color: white; 
+} 
+@media (max-width: 6000px) {} 
+@media (max-width: 1000px) {}

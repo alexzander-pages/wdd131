@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Search and filter Arizona adventures by activity, difficulty, and location. Find hiking trails, scenic viewpoints, and outdoor experiences across Arizona.">
+    <meta name="author" content="Cruz Day">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Find Arizona Adventures | Hiking, Sightseeing & Outdoor Activities">
+    <meta property="og:description" content="Explore Arizona adventures with search and filters. Discover hikes, scenic views, and outdoor activities that match your interests.">
+    <meta property="og:url" content="https://alexzander-pages.github.io/wdd131/charactercard/adventures.html">
+    <meta property="og:image" content="https://alexzander-pages.github.io/wdd131/charactercard/images/sedona_red_rock_panoramic.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Find Arizona Adventures">
+    <meta name="twitter:description" content="Search and filter hikes, scenic views, and outdoor activities across Arizona.">
+    <meta name="twitter:image" content="https://alexzander-pages.github.io/wdd131/charactercard/images/sedona_red_rock_panoramic.webp">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>Explore Arizona - Adventures Page</title>
+    <link href="styles/adventures.css" rel="stylesheet">
+    <script src="javascript/adventures.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="circle-background">
+            <a href="index.html" class="logo_link">
+                <img class="logo" src="images/arizona-adventures-logo.webp" alt="Arizona Adventures Logo">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="adventures.html">Adventures</a>
+            <a href="favorites.html">Favorites</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+    <div class="heroCard">
+        <section class="heroMsg">
+            <h1 id="invitingMsg">Find your Next Adventure</h1>
+            <h4 class="challengeMsg">Explore outdoor destinations across Arizona. Use the search and filters below to find hikes, scenic views, and activities that match your interests and skill level.</h4>
+            <button class="startButton">Start Exploring</button>
+        </section>
+        <div class="hero-box">
+            <img class="grandCanyonPanorama" src="images/sedona_red_rock_panoramic.webp" alt="Sedona Red Rock Panoramic">
+        </div>
+    </div>
+    <div class="queryBox">
+        <form class="searchAndFilterSection">
+            <label for="searchAdventures"></label>
+            <input
+                type="text"
+                id="searchAdventures"
+                name="searchAdventures"
+                placeholder="Search adventures (e.g., hiking, easy, Phoenix...)"
+                required
+                />
+            <button class="searchIcon" type="submit">
+                <img src="images/search.svg" alt="Search Button">
+            </button>
+        </form>
+        <p>Filter Options:</p>
+		<ul>
+			<li>Activity Type: Hiking, Sightseeing, Camping</li>
+			<li>Difficulty: Easy Moderate, Hard</li>
+		</ul>
+    </div>
+    <main>
+        <div id="adventureContainer"></div>
+
+        <dialog id="adventure-modal">
+            <div class="modal-content"></div>
+            <button class="close-viewer">X</button>
+        </dialog>
+    </main>
+    <footer>
+        <section class="top-footer">
+            <div class="circle-background">
+                <a href="index.html" class="logo_link">
+                    <img class="logo" src="images/arizona-adventures-logo.webp" alt="Arizona Adventures Logo">
+                </a>
+            </div>   
+            <p><a class="socialMediaLinks" href="about.html">About</a></p>
+            <p><a class="socialMediaLinks" href="favorites.html">Favorites</a></p>
+            <p><a class="socialMediaLinks" href="site-plan.html">Site Plan</a></p>
+            <p><a  class="socialMediaLinks"href="adventures.html">Adventures</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.webp" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.webp" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.webp" alt="instagram icon">
+                </a>
+            </div>
+        </section>
+        <section class="bottom-footer">
+            <p>Arizona Adventures &copy; 2026 - Cruz day</p>
+        </section>
+    </footer>
+    
+</body>
+</html>
