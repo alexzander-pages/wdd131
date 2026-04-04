@@ -25,16 +25,16 @@
     <script src="javascript/about.js" defer></script>
 </head>
 <body>
+    <a href="#mainContent" class="linkHop">Skip to main content</a>
     <header>
         <div class="circle-background">
             <a href="index.html" class="logo_link">
                 <img class="logo" src="images/arizona-adventures-logo.webp" alt="Arizona Adventures Logo">
             </a>
         </div>
-        <nav>
+        <nav aria-label="navigation">
             <a href="index.html">Home</a>
             <a href="adventures.html">Adventures</a>
-            <a href="favorites.html">Favorites</a>
             <a href="about.html">About</a>
         </nav>
     </header>
@@ -42,29 +42,29 @@
         <section class="heroMsg">
             <h1 id="invitingMsg">About Arizona Adventures</h1>
             <h4 class="challengeMsg">Learn more about the purpose behind this site and the inspiration for exploring the outdoors across Arizona.</h4>
-            <button class="startButton">Start Exploring</button>
+            <button class="startButton" aria-label="Start Exploring Arizona Adventures">Start Exploring</button>
         </section>
         <div class="hero-box">
-            <img class="grandCanyonPanorama" src="images/grand_canyon_panorama.webp" alt="Grand Canyon">
+            <img class="grandCanyonPanorama" src="images/grand_canyon_panorama.webp" alt="Panoramic view of the Grand Canyon during sunset">
         </div>
     </div>
-    <main>
+    <main id="mainContent" aria-label="Main Content">
         <section class="topSection">
-			<div class="Statement">
+			<article class="Statement">
 				<img src="images/about_section_card.webp" alt="Beautiful lake view">
 				<h4 class="statementName">About the Website</h4>
 				<p>As a new resident of Arizona and an advocate for adventure, I made Arizona Adventures to help people discover and explore the incredible outdoor destinations found throughout Arizona. From desert trials to mountain forests, the state offers a wide variety of landscapes and activities for all types of adventurers.</p>
-			</div>
-			<div class="Statement">
+			</article>
+			<article class="Statement">
 				<img src="images/mission_section.webp" alt="A single individual looking out over the scenic view">
-				<h4>Mission Statement</h4>
+				<h2>Mission Statement</h2>
 				<p>Our mission is to inspire people to explore nature, stay active, and experience the beauty of Arizona in a safe and accessible way.</p>
-			</div>
+			</article>
         </section>
         <section class="middleSection">
-			<div class="Statement">
+			<article class="Statement">
 				<img src="images/audience_section.webp" alt="Group of friends sitting together in nature">
-				<h4 class="statementName">Who This Site Is For</h4>
+				<h2 class="statementName">Who This Site Is For</h2>
 				<p>This site was designed for:</p>
 				<ul class="statementContent">
 					<li>Beginners looking for easy outdoor activities</li>
@@ -73,10 +73,10 @@
 					<li>Locals wanting to explore new places</li>
 				</ul>
 				<p>No matter your experience level, Arizona Adventures provides something for everyone.</p>
-			</div>
-			<div class="Statement">
+			</article>
+			<article class="Statement">
 				<img src="images/responsibility_section.webp" alt="Warning sign">
-				<h4>Outdoor Responsibility</h4>
+				<h2>Outdoor Responsibility</h2>
 				<p>Exploring nature comes with responsibility. Visitors should always:</p>
 				<ul class="statementContent">
 					<li>Respect the environment</li>
@@ -85,15 +85,15 @@
 					<li>Leave no trace behind</li>
                 </ul>
 				<p>Protecting these natural areas ensures they remain beautiful for generations.</p>
-			</div>
+			</article>
         </section>
         <section class="bottomSection">
-			<div class="Statement">
-				<h4>Why This Site Exists</h4>
+			<article class="Statement">
+				<h2>Why This Site Exists</h2>
 				<p>With so many amazing places to visit, it can be overwhelming to decide where to go. Arizona Adventures simplifies this process by organizing outdoor locations into an easy-to-use format with helpful details and filters.</p>
-			</div>
-			<div class="Statement">
-				<h4>Future Goals</h4>
+            </article>
+			<article class="Statement">
+				<h2>Future Goals</h2>
 				<p>In the future, Arizona Adventures may include:</p>
 				<ul class="statementContent">
 					<li>Interactive Maps</li>
@@ -102,7 +102,7 @@
 					<li>Expanded locations beyond Arizona</li>
 					<li>"Offline Mode" for wifi dead zones</li>
 				</ul>
-			</div>
+			</article>
 	    </section>
     </main>
     <footer>
@@ -113,17 +113,16 @@
                 </a>
             </div>   
             <p><a class="socialMediaLinks" href="about.html">About</a></p>
-            <p><a class="socialMediaLinks" href="favorites.html">Favorites</a></p>
             <p><a class="socialMediaLinks" href="site-plan.html">Site Plan</a></p>
             <p><a  class="socialMediaLinks"href="adventures.html">Adventures</a></p>
             <div class="social">
-                <a href="https://facebook.com" target="_blank">
+                <a href="https://facebook.com" target="_blank" aria-label="Open Facebook in a new tab">
                     <img src="images/facebook.webp" alt="fb icon">
                 </a>
-                <a href="https://twitter.com" target="_blank">
+                <a href="https://twitter.com" target="_blank" aria-label="Open Twitter in a new tab">
                     <img src="images/twitter.webp" alt="twitter icon">
                 </a>
-                <a href="https://instagram.com" target="_blank">
+                <a href="https://instagram.com" target="_blank" aria-label="Open Instagram in a new tab">
                     <img src="images/instagram.webp" alt="instagram icon">
                 </a>
             </div>

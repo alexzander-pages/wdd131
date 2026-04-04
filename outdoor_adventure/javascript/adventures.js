@@ -79,7 +79,7 @@ form.addEventListener('submit', function(event) {
 
 function adventureTemplate(adventure) {
     return `
-        <section class="adventureCards">
+        <article class="adventureCards" tabindex="0" role="button">
             <img src="${adventure.image_sml}" alt="${adventure.name}">
             <h4 class="cardName">${adventure.name}</h4>
             <ul class="AdventureContent">
@@ -87,7 +87,7 @@ function adventureTemplate(adventure) {
                 <li class="adventureDifficulty">Difficulty: ${adventure.difficulty}</li>
                 <li class="adventureDescription">Description: ${adventure.description}</li>
             </ul>
-        </section>
+        </article>
     `;
 }
 
@@ -113,6 +113,10 @@ function renderAdventures(list) {
             modalContent.innerHTML = adventureDetailTemplate(adventure);
             modal.showModal();
         });
+        card.addEventListener('keydown', e => {
+            if(e.key === 'Enter')
+            card.click();
+        });                                     
     });
 }
 
@@ -138,3 +142,7 @@ init();
 function init() {
     renderAdventures(adventures);
 }
+
+modal.addEventListener('keydown', e => {
+    if(e.key === 'Escape') modal.close();
+});

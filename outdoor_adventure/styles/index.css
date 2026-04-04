@@ -5,8 +5,20 @@ body {
     font-size: 15px;
     margin: 0;
 }
+.linkHop {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+.linkHop:focus {
+  left: 0;
+}
 
-h1, a, h3 {
+h1, a, h2 {
     font-family: 'Montserrat', Arial, sans-serif;
 }
 
@@ -294,7 +306,44 @@ footer {
     color: white;
 }
 
-@media (max-width: 6000px) {}
+@media (max-width: 780px) {
+    header {
+        grid-template-columns: 120px auto;
+    }
+    nav a {
+        padding: 40px 10px;
+        font-size: 0.9rem;
+    }
+    .top-footer, .bottom-footer {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+    .top-footer .social {
+        margin-top: 10px;
+    }
+}
 
-@media (max-width: 1000px) {}
-
+@media (max-width: 520px) {
+    header {
+        grid-template-columns: 100px auto;
+        padding: 10px;
+    }
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    nav a {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+    .top-footer, .bottom-footer {
+        font-size: 0.85rem;
+    }
+    .top-footer .social img {
+        width: 25px;
+        height: 25px;
+    }
+}

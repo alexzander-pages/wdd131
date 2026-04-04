@@ -23,65 +23,66 @@
     <script src="javascript/index.js" defer></script>
 </head>
 <body>
+    <!--Used ChatGpt to judge for accessibility, the A.I. tool recommended adding this link to skip to the main content imediately.-->
+    <a href="#mainContent" class="linkHop">Skip to main content</a>
     <header>
         <div class="circle-background">
             <a href="index.html" class="logo_link">
                 <img class="logo" src="images/arizona-adventures-logo.webp" alt="Arizona Adventures Logo">
             </a>
         </div>
-        <nav>
+        <nav aria-label="Navigation">
             <a href="index.html">Home</a>
             <a href="adventures.html">Adventures</a>
-            <a href="favorites.html">Favorites</a>
             <a href="about.html">About</a>
         </nav>
     </header>
     <div class="heroCard">
         <section class="heroMsg">
             <h1 id="invitingMsg">Explore Arizona</h1>
-            <h4 class="challengeMsg">Discover breathtaking hikes, scenic views, and unforgettable outdoor adventures across Arizona.</h4>
+            <p class="challengeMsg">Discover breathtaking hikes, scenic views, and unforgettable outdoor adventures across Arizona.</p>
             <button class="startButton">Start Exploring</button>
         </section>
         <div class="hero-box">
             <img class="grandCanyonPanorama" src="images/grand_canyon_panorama.webp" alt="Grand Canyon Panoramic">
         </div>
     </div>
-    <main>
+    <main id="mainContent" aria-label="Main Content">
         <div class="introductionSection">
 			<p>Arizona is home to some of the most stunning landscapes in the United States, from towering red rock formations to vast desert plains and deep canyons. Whether you're an experienced hiker or just looking for a peaceful place to enjoy nature, there’s something here for everyone.</p>
 		    <p>Arizona Adventures helps you easily find and explore the best outdoor destinations across the state.</p>
 		</div>
         <div class="featuredAdventuresSection">
 			<div class="featuredTextContent">    
-                <h3>Featured Adventures</h3>
+                <h2>Featured Adventures</h2>
 			    <p>Here are some of the most popular places to explore:</p>
             </div>
             <section class="featuredCardsGallery">
                 <figure class="featuredAdventuresCards" id="camelbackCard">
-                    <p class="cardName">Camelback Mountain</p>
-                    <img src="images/camelback_mountain_trail_card_sml.webp" alt="Camelback Mountains">
+                    <h3 class="cardName">Camelback Mountain</h3>
+                    <img src="images/camelback_mountain_trail_card_sml.webp" alt="Camelback Mountain hiking trail in Phoenix">
                     <p>A challenging hike with steep trails and rewarding panoramic views of the Phoenix area.</p>
                 </figure>
                 <figure class="featuredAdventuresCards" id="horseshoeCard">
-                    <p class="cardName">Horseshoe Bend</p>
+                    <h3 class="cardName">Horseshoe Bend</h3>
                     <img src="images/horseshoe_bend_card_sml.webp" alt="Horseshoe Bend">
                     <p>A stunning viewpoint where the Colorado River curves through towering canyon walls.</p>
                 </figure>
                 <figure class="featuredAdventuresCards" id="sedonaCard">
-                    <p class="cardName">Sedona Red Rocks</p>
+                    <h3 class="cardName">Sedona Red Rocks</h3>
                     <img src="images/sedona_red_rock_sml.webp" alt="Sedona Red Rock">
                     <p>Famous for its vibrant red rock formations and scenic hiking trails for all skill levels.</p>
                 </figure>
             </section>
-            <dialog>
-                <img class="dialogImg">
-                <button class="close-viewer">X</button>
+            <dialog aria-label="Image Viewer">
+                <img class="dialogImg" alt="">
+                <button class="close-viewer" aria-label="Close image viewer">X</button>
             </dialog>
         </div>
         <section class="infoGrid">
             <div class="whyUseSection">
                 <img class="infoImg" src="images/arizona-adventures-logo.webp" alt="Arizona Adentures Logo">                
-                <h3>Why Use Arizona Adventures?</h3>
+                <h2>Why Use Arizona Adventures?</h2>
                 <ul>
                     <li>Easily search for outdoor activities</li>
                     <li>Filter by difficulty and type</li>
@@ -91,12 +92,12 @@
             </div>
             <div class="safetyReminderSection">
                 <img class="infoImg" src="images/safety_equipment.webp" alt="Recommended Safety Equipment">                
-                <h3>Stay Safe While Exploring</h3>
+                <h2>Stay Safe While Exploring</h2>
                 <p>Always bring water, wear proper gear, and check weather conditions before heading out. Arizona's environment can be extreme, so preparation is key to a safe and enjoyable adventure.</p>
             </div>
         </section>
 		<div class="callToAction">
-			<h3>Ready to Explore?</h3>
+			<h2>Ready to Explore?</h2>
             <a href="adventures.html" class="ctaButton">View All Adventures</a>
 		</div>
     </main>
@@ -108,17 +109,16 @@
                 </a>
             </div>   
             <p><a href="about.html">About</a></p>
-            <p><a href="favorites.html">Favorites</a></p>
             <p><a href="site-plan.html">Site Plan</a></p>
             <p><a href="adventures.html">Adventures</a></p>
             <div class="social">
-                <a href="https://facebook.com" target="_blank">
+                <a href="https://facebook.com" target="_blank" aria-label="Open Facebook in a new tab">
                     <img src="images/facebook.webp" alt="fb icon">
                 </a>
-                <a href="https://twitter.com" target="_blank">
+                <a href="https://twitter.com" target="_blank" aria-label="Open Twitter in a new tab">
                     <img src="images/twitter.webp" alt="twitter icon">
                 </a>
-                <a href="https://instagram.com" target="_blank">
+                <a href="https://instagram.com" target="_blank" aria-label="Open Instagram in a new tab">
                     <img src="images/instagram.webp" alt="instagram icon">
                 </a>
             </div>

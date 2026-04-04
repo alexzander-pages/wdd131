@@ -34,23 +34,21 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="adventures.html">Adventures</a>
-            <a href="favorites.html">Favorites</a>
             <a href="about.html">About</a>
         </nav>
     </header>
-    <div class="heroCard">
+    <figure class="heroCard">
         <section class="heroMsg">
             <h1 id="invitingMsg">Find your Next Adventure</h1>
             <h4 class="challengeMsg">Explore outdoor destinations across Arizona. Use the search and filters below to find hikes, scenic views, and activities that match your interests and skill level.</h4>
-            <button class="startButton">Start Exploring</button>
         </section>
-        <div class="hero-box">
+        <div class="heroBox">
             <img class="grandCanyonPanorama" src="images/sedona_red_rock_panoramic.webp" alt="Sedona Red Rock Panoramic">
         </div>
-    </div>
+    </figure>
     <div class="queryBox">
         <form class="searchAndFilterSection">
-            <label for="searchAdventures"></label>
+            <label for="searchAdventures" class="hidden">Search Adventures</label>
             <input
                 type="text"
                 id="searchAdventures"
@@ -58,7 +56,7 @@
                 placeholder="Search adventures (e.g., hiking, easy, Phoenix...)"
                 required
                 />
-            <button class="searchIcon" type="submit">
+            <button class="searchIcon" type="submit" aria-label="Search Adventures">
                 <img src="images/search.svg" alt="Search Button">
             </button>
         </form>
@@ -71,7 +69,7 @@
     <main>
         <div id="adventureContainer"></div>
 
-        <dialog id="adventure-modal">
+        <dialog id="adventure-modal" role="dialog" aria-modal="true">
             <div class="modal-content"></div>
             <button class="close-viewer">X</button>
         </dialog>
@@ -84,17 +82,16 @@
                 </a>
             </div>   
             <p><a class="socialMediaLinks" href="about.html">About</a></p>
-            <p><a class="socialMediaLinks" href="favorites.html">Favorites</a></p>
             <p><a class="socialMediaLinks" href="site-plan.html">Site Plan</a></p>
             <p><a  class="socialMediaLinks"href="adventures.html">Adventures</a></p>
             <div class="social">
-                <a href="https://facebook.com" target="_blank">
+                <a href="https://facebook.com" target="_blank" aria-label="Open Facebook in a new tab">
                     <img src="images/facebook.webp" alt="fb icon">
                 </a>
-                <a href="https://twitter.com" target="_blank">
+                <a href="https://twitter.com" target="_blank" aria-label="Open Twitter in a new tab">
                     <img src="images/twitter.webp" alt="twitter icon">
                 </a>
-                <a href="https://instagram.com" target="_blank">
+                <a href="https://instagram.com" target="_blank" aria-label="Open Instagram in a new tab">
                     <img src="images/instagram.webp" alt="instagram icon">
                 </a>
             </div>
